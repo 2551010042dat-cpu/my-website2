@@ -1,0 +1,80 @@
+body { 
+  display:flex; 
+  justify-content:center; 
+  align-items:center; 
+  height:100vh; 
+  background:#f0f0f0; 
+  margin:0; 
+}
+
+#container { 
+  position:relative; 
+  width:400px; 
+  height:400px; 
+}
+
+#thung {
+  position:relative;
+  width:320px; 
+  height:320px;
+  margin:auto;
+  border:10px solid #aaa;
+  border-radius:50%;
+  background: radial-gradient(circle at 50% 50%, #ffffff 0%, #cde7f0 100%);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3), inset 0 0 25px rgba(255,255,255,0.3);
+  overflow:hidden;
+}
+
+/* Kính 3D bên trong */
+#thung-noi-dung {
+  position:absolute;
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.4), rgba(0,0,0,0.05));
+  pointer-events:none;
+}
+
+/* Cửa thoát bóng */
+#cua-thung {
+  position:absolute;
+  width:80px; height:40px;
+  background: rgba(255,255,255,0.7);
+  border:3px solid #ccc;
+  border-radius:10px;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  z-index:10;
+}
+
+.bong {
+  position:absolute;
+  width:50px; height:50px;
+  border-radius:50%;
+  display:flex; justify-content:center; align-items:center;
+  font-weight:bold; font-size:20px;
+  color:#111;
+  cursor:pointer;
+}
+
+.raNgoaiBong {
+  width:50px; height:50px;
+  border-radius:50%;
+  display:flex; justify-content:center; align-items:center;
+  font-weight:bold; font-size:20px;
+  color:#111;
+  position:absolute;
+  cursor:pointer;
+}
+
+button { 
+  position:absolute; 
+  bottom:-60px; 
+  left:50%; 
+  transform:translateX(-50%); 
+  padding:10px 20px; 
+  font-size:16px; 
+  cursor:pointer; 
+}
