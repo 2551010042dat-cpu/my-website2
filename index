@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bốc bóng</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="thung">
+      <div id="thung-noi-dung"></div>
+      <div id="cua-thung"></div>
+    </div>
+    <button onclick="bocBong()">Bốc bóng</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
