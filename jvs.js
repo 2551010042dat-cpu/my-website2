@@ -68,7 +68,7 @@ function bocBong(){
   setTimeout(()=>{
     bongRa.style.transition='transform 0.8s ease-out';
     const xOffset = 140;
-    const yOffset = -70;
+    const yOffset = -80;
     bongRa.style.transform=`scale(2) translateX(${xOffset}px) translateY(${yOffset}px)`;
   },50);
 
@@ -76,4 +76,5 @@ function bocBong(){
     bongRa.remove();
     bongRaHienTai=null;
   });
+
 }
